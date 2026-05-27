@@ -3,7 +3,7 @@ project(c_cpp)
 
 set(CMAKE_CXX_STANDARD 20)
 
-file(GLOB SOURCES "*.cpp")
+file(GLOB SOURCES "*.cpp" "*.c")
 
 foreach(src ${SOURCES})
     get_filename_component(name ${src} NAME_WE)
